@@ -7,6 +7,9 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Card: typeof import('./src/components/Card.vue')['default']
+    CardMiddle: typeof import('./src/components/cards/CardMiddle.vue')['default']
+    CardTop: typeof import('./src/components/cards/CardTop.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
     IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']
@@ -14,8 +17,14 @@ declare module '@vue/runtime-core' {
     IconSupport: typeof import('./src/components/icons/IconSupport.vue')['default']
     IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
     NButton: typeof import('naive-ui')['NButton']
+    NImage: typeof import('naive-ui')['NImage']
+    NPagination: typeof import('naive-ui')['NPagination']
+    RecomendedCard: typeof import('./src/components/cards/RecomendedCard.vue')['default']
+    RecommendedCard: typeof import('./src/components/cards/RecommendedCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SecviceCard: typeof import('./src/components/cards/SecviceCard.vue')['default']
+    ServiceCard: typeof import('./src/components/cards/ServiceCard.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
