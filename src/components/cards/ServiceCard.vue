@@ -14,6 +14,7 @@ defineProps<{
     <n-image
       class="rounded-t-md"
       lazy
+      preview-disabled
       :src="img"
       :intersection-observer-options="{
         root: '#image-scroll-container',
