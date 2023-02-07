@@ -1,17 +1,25 @@
-<script setup lang="ts">
-import { Icon } from "@iconify/vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header>
-    <header-component />
-    <Icon icon="mdi:user" />
-    <filter-card
-      img="https://picsum.photos/230/230"
-      name="GoPro HERO6 4K Action Camera - Black"
-      price="$99.50"
-      salePrice="$1128.00"
+    <navbar-component />
+    <!-- <card-middle
+      price="USD 19"
+      productName="Soft chairs"
+      img="https://picsum.photos/200/300"
+    /> -->
+    <!-- <card-top img="https://picsum.photos/200/300" /> -->
+    <recommended-card
+      description="T-shirts with multiple colors, for men"
+      price="$10.30"
+      img="https://picsum.photos/200/300"
     />
+    <!-- <row-card img="https://picsum.photos/200/300" /> -->
+    <!-- <service-card
+      title="Source from Industry Hubs"
+      img="https://picsum.photos/280/110"
+      icon="ic:baseline-search"
+    /> -->
   </header>
 
   <RouterView />

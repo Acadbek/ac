@@ -19,6 +19,9 @@ declare module '@vue/runtime-core' {
     IconEcosystem: typeof import('./src/components/icons/IconEcosystem.vue')['default']
     IconSupport: typeof import('./src/components/icons/IconSupport.vue')['default']
     IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
+    IMdiUser: typeof import('~icons/mdi/user')['default']
+    NavbarComponent: typeof import('./src/components/NavbarComponent.vue')['default']
+    NavberComponent: typeof import('./src/components/NavberComponent.vue')['default']
     NButton: typeof import('naive-ui')['NButton']
     NImage: typeof import('naive-ui')['NImage']
     NInput: typeof import('naive-ui')['NInput']
@@ -31,6 +34,7 @@ declare module '@vue/runtime-core' {
     RowCard: typeof import('./src/components/cards/RowCard.vue')['default']
     SecviceCard: typeof import('./src/components/cards/SecviceCard.vue')['default']
     ServiceCard: typeof import('./src/components/cards/ServiceCard.vue')['default']
+    SubNavbar: typeof import('./src/components/SubNavbar.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }

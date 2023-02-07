@@ -1,5 +1,6 @@
 <script lang="ts">
 import { defineComponent, ref } from "vue";
+
 export default defineComponent({
   setup() {
     return {
@@ -39,12 +40,15 @@ export default defineComponent({
           />
           <n-button class="bg-[#18a058]" type="primary"> Search </n-button>
         </div>
-        <div>
-          <Icon icon="mdi:user" />
+        <div class="flex gap-[10px] ml-[85px]">
+          <div class="w-[37px] h-[37px] bg-[#333] rounded-md">
+            <i-mdi-user></i-mdi-user>
+          </div>
+          <div class="w-[37px] h-[37px] bg-[#333] rounded-md"></div>
+          <div class="w-[37px] h-[37px] bg-[#333] rounded-md"></div>
+          <div class="w-[37px] h-[37px] bg-[#333] rounded-md"></div>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<style></style>
