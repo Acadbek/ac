@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     Card: typeof import('./src/components/Card.vue')['default']
     CardMiddle: typeof import('./src/components/cards/CardMiddle.vue')['default']
     CardTop: typeof import('./src/components/cards/CardTop.vue')['default']
+    FilterCard: typeof import('./src/components/cards/FilterCard.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     HeaderComponent: typeof import('./src/components/HeaderComponent.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']

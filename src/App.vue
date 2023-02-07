@@ -6,13 +6,11 @@ import { Icon } from "@iconify/vue";
   <header>
     <header-component />
     <Icon icon="mdi:user" />
-    <row-card
-      img="https://picsum.photos/210/210"
-      name="Canon Cmera EOS 2000, Black 10x zoom"
-      price="$998.00"
+    <filter-card
+      img="https://picsum.photos/230/230"
+      name="GoPro HERO6 4K Action Camera - Black"
+      price="$99.50"
       salePrice="$1128.00"
-      orderCount="154 orders"
-      isFree="Free Shipping"
     />
   </header>
 
