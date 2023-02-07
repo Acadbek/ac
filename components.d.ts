@@ -27,6 +27,7 @@ declare module '@vue/runtime-core' {
     RecommendedCard: typeof import('./src/components/cards/RecommendedCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    RowCard: typeof import('./src/components/cards/RowCard.vue')['default']
     SecviceCard: typeof import('./src/components/cards/SecviceCard.vue')['default']
     ServiceCard: typeof import('./src/components/cards/ServiceCard.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
