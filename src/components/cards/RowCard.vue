@@ -14,7 +14,7 @@ defineProps<{
 
 <template>
   <div
-    class="flex border-[#E0E0E0] border-[1px] items-start bg-white gap-[24px]"
+    class="relative flex border-[#E0E0E0] border-[1px] items-start bg-white gap-[24px]"
   >
     <n-image
       class="p-[8px]"
@@ -76,5 +76,10 @@ defineProps<{
         View details
       </button>
     </div>
+    <button
+      class="bg-white absolute right-[20px] top-[20px] w-[40px] h-[40px] p-[8px] rounded-md drop-shadow-sm border-[#DEE2E7] border-[1px]"
+    >
+      icon
+    </button>
   </div>
 </template>
