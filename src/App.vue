@@ -3,12 +3,35 @@ import { NConfigProvider, GlobalThemeOverrides } from "naive-ui";
 
 const themeOverrides: GlobalThemeOverrides = {
   common: {
-    primaryColor: "blue",
+    baseColor: "white",
+    primaryColor: "#0B75FF",
+    primaryColorHover: "#0B75FF",
+    primaryColorPressed: "#fff",
+    borderColor: "#0B75FF",
+    cardColor: "red",
   },
   Button: {
-    textColor: "#fff",
+    textColor: "#0B75FF",
+    colorFocus: "#fff",
+    colorHoverPrimary: "#fff",
+    colorHover: "#0B75FF",
+    color: "#0B75FF",
+  },
+  Input: {
+    // textColor: "#333",
+    // borderHover: "#0B75FF",
+    // border: "#333",
+  },
+  Dropdown: {},
+  Select: {
+    peers: {
+      InternalSelection: {
+        textColor: "#000",
+      },
+    },
   },
 };
+// ...
 </script>
 
 <template>
