@@ -416,6 +416,13 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
+"@iconify-json/ic@^1.1.13":
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/@iconify-json/ic/-/ic-1.1.13.tgz#f5405e6ec65c1ac5b85e2d1ea1adde9093b199bd"
+  integrity sha512-5i5zal/VRwTrs99iMTnG1Zu97bgX9Mkiu9TzR1U1rHBylUnBW+HkOweoQVEPgQITGG024/lNbZxU+3Aa2xuDww==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/material-symbols@^1.1.29":
   version "1.1.29"
   resolved "https://registry.yarnpkg.com/@iconify-json/material-symbols/-/material-symbols-1.1.29.tgz#c06285deb9a83b82e4a048a3ecc1d034e3ab6b96"

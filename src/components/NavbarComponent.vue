@@ -21,7 +21,7 @@ export default defineComponent({
 </script>
 <template>
   <div
-    class="bg-white sm:py-[20px] md:py-[20px] lg:py-[20px] pt-[10px] pb-[16px] border-b"
+    class="bg-white px-[20px] sm:py-[20px] md:py-[20px] lg:py-[20px] pt-[10px] pb-[16px] border-b"
   >
     <div class="container">
       <div
@@ -46,35 +46,49 @@ export default defineComponent({
               v-model:value="value"
               :options="options"
             />
-            <n-button class="hidden sm:hidden md:hidden lg:flex"> Search </n-button>
+            <n-button class="hidden sm:hidden md:hidden lg:flex">
+              Search
+            </n-button>
           </div>
         </div>
         <div class="flex gap-[25px]">
           <div class="flex flex-col items-center gap-[5px] gap-[5px]">
-            <i-mdi-user width="24" height="24" class="text-[#8B96A5]"></i-mdi-user>
+            <i-mdi-user
+              width="24"
+              height="24"
+              class="text-[#8B96A5]"
+            ></i-mdi-user>
             <p
               class="text-xs lg:block md:block sm:hidden hidden leading-4 flex items-center text-center text-[#8B96A5]"
             >
               Profile
             </p>
           </div>
-          <div class="hidden sm:hidden md:flex lg:flex flex-col items-center gap-[5px]">
+          <div
+            class="hidden sm:hidden md:flex lg:flex flex-col items-center gap-[5px]"
+          >
             <i-mdi-message-badge-outline
               width="24"
               height="24"
               class="text-[#8B96A5]"
             ></i-mdi-message-badge-outline>
-            <p class="text-xs leading-4 flex items-center text-center text-[#8B96A5]">
+            <p
+              class="text-xs leading-4 flex items-center text-center text-[#8B96A5]"
+            >
               Message
             </p>
           </div>
-          <div class="hidden sm:hidden md:flex lg:flex flex-col items-center gap-[5px]">
+          <div
+            class="hidden sm:hidden md:flex lg:flex flex-col items-center gap-[5px]"
+          >
             <i-mdi-cards-heart
               width="24"
               height="24"
               class="text-[#8B96A5]"
             ></i-mdi-cards-heart>
-            <p class="text-xs leading-4 flex items-center text-center text-[#8B96A5]">
+            <p
+              class="text-xs leading-4 flex items-center text-center text-[#8B96A5]"
+            >
               Orders
             </p>
           </div>
@@ -100,7 +114,7 @@ export default defineComponent({
     </div>
   </div>
   <div class="border-b bg-white lg:flex md:flex sm:hidden hidden py-[22px]">
-    <div class="container py-4 flex items-center gap-2">
+    <div class="container flex items-center gap-2">
       <i-quill-hamburger
         width="55"
         heigth="55"
