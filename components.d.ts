@@ -27,6 +27,7 @@ declare module '@vue/runtime-core' {
     IMdiUser: typeof import('~icons/mdi/user')['default']
     IQuillHamburger: typeof import('~icons/quill/hamburger')['default']
     IQuillUser: typeof import('~icons/quill/user')['default']
+    MenuComponent: typeof import('./src/components/Home/MenuComponent.vue')['default']
     NavbarComponent: typeof import('./src/components/NavbarComponent.vue')['default']
     NavberComponent: typeof import('./src/components/NavberComponent.vue')['default']
     NButton: typeof import('naive-ui')['NButton']

@@ -38,6 +38,7 @@ const themeOverrides: GlobalThemeOverrides = {
   <n-config-provider :theme-overrides="themeOverrides">
     <header>
       <navbar-component />
+      <menu-component />
       <recommended-card
         description="T-shirts with multiple colors, for men"
         price="$10.30"
