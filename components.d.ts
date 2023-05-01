@@ -61,6 +61,7 @@ declare module '@vue/runtime-core' {
     ServiceCard: typeof import('./src/components/Cards/ServiceCard.vue')['default']
     SubNavbar: typeof import('./src/components/SubNavbar.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
+    Time: typeof import('./src/components/Home/Time.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
 }

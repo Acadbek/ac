@@ -9,5 +9,5 @@
   "compilerOptions": {
     "composite": true,
     "types": ["node", "unplugin-icons/types/vue"]
-  }
+  },
 }
