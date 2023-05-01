@@ -1,0 +1,11 @@
+@layer base {
+  
+  ul,
+  li {
+    @apply list-none;
+  }
+
+  input {
+    @apply outline-none;
+  }
+}

@@ -18,11 +18,8 @@ defineProps<{
       </p>
     </div>
     <div>
-      <img
-        class="w-[82px] h-[82px] object-cover"
-        :src="img"
-        alt="Product's photo"
-      />
+      <img class="w-[82px] h-[82px] object-cover" :src="img" alt="Product's photo" />
     </div>
   </div>
+  <!--  BzLTKmqmFmnG1bijQJxNL2q5 -->
 </template>

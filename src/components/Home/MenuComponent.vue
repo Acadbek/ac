@@ -1,63 +1,62 @@
 <script lang="ts">
+import { uuid } from 'vue-uuid';
 import { defineComponent, ref } from "vue";
+
+interface Menu {
+  id: any;
+  title: string;
+}
 
 export default defineComponent({
   setup() {
-    const active = ref(0);
+    const active = ref<number>(0);
 
-    function updateActive(val: number) {
+    function updateActive(val: number): void {
       active.value = val;
     }
+
+    const menus: Menu[] = [
+      { id: uuid, title: "Home interiors" },
+      { id: uuid, title: "Computer and tech" },
+      { id: uuid, title: "Tools, equipments" },
+      { id: uuid, title: "Sports and outdoor" },
+      { id: uuid, title: "Machinery tools" },
+      { id: uuid, title: "More category" },
+    ];
+
+    const images: string[] = [
+      'https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel2.jpeg',
+      'https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel3.jpeg',
+      'https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel4.jpeg'
+    ];
+
     return {
-      updateActive,
+      menus,
+      images,
       active,
+      updateActive,
       isActive: true,
-      menus: [
-        { id: 1, title: "Automobiles" },
-        { id: 23, title: "Clothes and wear" },
-        { id: 3, title: "Home interiors" },
-        { id: 447, title: "Computer and tech" },
-        { id: 53, title: "Tools, equipments" },
-        { id: 8, title: "Sports and outdoor" },
-        { id: 934, title: "Animal and pets" },
-        { id: 15, title: "Machinery tools" },
-        { id: 155, title: "More category" },
-      ],
     };
-  },
+  }
 });
 </script>
 
+
 <template>
-  <div class="container m-auto !mt-[20px]">
-    <div
-      class="border bg-white p-[20px] rounded-md flex items-start gap-[14px]"
-    >
+  <div class="container m-auto !mt-5">
+    <div class="border p-5 rounded-md flex-start gap-3" >
       <ul class="hidden sm:hidden md:block lg:block">
         <li
           v-for="(item, index) of menus"
           @click="updateActive(index)"
           :class="{ active: active === index }"
           :key="item.id"
-          class="p-[10px] lg:w-[250px] md:w-[200px] cursor-pointer not-italic font-medium text-base leading-5 text-[#505050] tracking-wide"
-        >
+          class="p-[10px] lg:w-[250px] md:w-[200px] cursor-pointer font-medium text-base text-gray-50 tracking-wide">
           {{ item.title }}
         </li>
       </ul>
       <n-carousel class="max-w-[665px] h-[360px]" show-arrow autoplay>
-        <img class="carousel-img" src="../../assets/banner.jpg" />
-        <img
-          class="carousel-img"
-          src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel2.jpeg"
-        />
-        <img
-          class="carousel-img"
-          src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel3.jpeg"
-        />
-        <img
-          class="carousel-img"
-          src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel4.jpeg"
-        />
+        <img v-for="img in images" :key="img" class="carousel-img" :src=img />
         <template #arrow="{ prev, next }">
           <div class="custom-arrow">
             <button type="button" class="custom-arrow--left" @click="prev">
@@ -81,48 +80,32 @@ export default defineComponent({
       </n-carousel>
       <div class="hidden sm:block md:block lg:block">
         <div class="h-[150px] bg-[#E3F0FF] rounded-md py-[12px] px-[10px]">
-          <div class="flex items-center gap-[8px]">
+          <div class="flex-center gap-2">
             <img
               width="44"
               height="44"
-              src="../../assets/Avatar.png"
+              src="../../assets/img/Avatar.png"
               alt="Avatar"
             />
             <div>
-              <p
-                class="not-italic font-normal text-base leading-5 text-gray-900"
-              >
-                Hi, user
-              </p>
-              <p
-                class="not-italic font-normal text-base leading-5 text-gray-900"
-              >
-                let’s get stated
-              </p>
+              <p class="text-base text-gray-900"> Hi, user </p>
+              <p class="text-base text-gray-900"> let’s get stated </p>
             </div>
           </div>
-          <button
-            class="bg-[#0B75FF] py-[7px] w-full text-white shadow-lg shadow-blue-500/50 rounded-md mt-[10px]"
-          >
+          <button class="bg-blue-main py-2 w-full shadow-lg shadow-blue-500/50 rounded-md mt-2">
             Join now
           </button>
-          <button
-            class="bg-[#fff] py-[7px] w-full text-[#0D6EFD] shadow-lg rounded-md mt-[5px]"
-          >
+          <button class="bg-white py-2 w-full text-blue-main shadow-lg rounded-md mt-1">
             Log in
           </button>
         </div>
-        <div class="w-full h-[95px] bg-[#F38332] rounded-md mt-[10px]">
-          <p
-            class="not-italic font-normal text-base leading-5 text-white pl-4 pt-4"
-          >
+        <div class="w-full h-24 bg-[#F38332] rounded-md mt-2">
+          <p class="text-base pl-4 pt-4">
             Get US $10 off with a new supplier
           </p>
         </div>
-        <div class="w-full h-[95px] bg-[#55BDC4] rounded-md mt-[10px]">
-          <p
-            class="not-italic font-normal text-base leading-5 text-white pl-4 pt-4"
-          >
+        <div class="w-full h-24 bg-blue-50 rounded-md mt-[10px]">
+          <p class="text-base pl-4 pt-4">
             Send quotes with supplier preferences
           </p>
         </div>

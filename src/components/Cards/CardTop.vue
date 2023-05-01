@@ -1,9 +1,11 @@
 <script setup lang="ts">
+
 defineProps<{
   img: string;
   productName: string;
   price: string;
 }>();
+
 </script>
 
 <template>
@@ -13,7 +15,7 @@ defineProps<{
     <img
       class="w-[140px] mb-[11px] h-[140px] object-cover"
       :src="img"
-      alt="IMG"
+      alt="Product image"
     />
     <p
       class="not-italic font-normal mb-2 text-base leading-6 text-center text-gray-900"

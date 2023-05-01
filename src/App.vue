@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { NConfigProvider, GlobalThemeOverrides } from "naive-ui";
+import { now } from "./helpers/getDate";
 
 const themeOverrides: GlobalThemeOverrides = {
   common: {
@@ -39,17 +40,10 @@ const themeOverrides: GlobalThemeOverrides = {
     <header>
       <navbar-component />
       <menu-component />
-      <recommended-card
-        description="T-shirts with multiple colors, for men"
-        price="$10.30"
-        img="https://picsum.photos/200/300"
-      />
-      <service-card
-        title="Source from Industry Hubs"
-        img="https://picsum.photos/280/110"
-        icon="ic:baseline-search"
-      />
     </header>
+    <main>
+      <intro-time-component />
+    </main>
 
     <RouterView />
   </n-config-provider>
